@@ -1,0 +1,393 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+/* font-family: 'Gentium Book Plus', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Neonderthaw', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Splash', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'The Nautigal', */
+}
+.navbar{
+    background-color: rgb(4, 51, 51);
+    color: white;
+    padding: 1% 7%;
+    text-align: center;
+}
+.nav-logo img{
+    border-radius: 50%;
+
+}
+
+.nav-link a{
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+    background-color: rgb(25, 192, 75);
+    padding: 5px;
+    border-radius: 5px;
+
+}
+.nav-title{
+    margin-top:20px;
+}
+.nav-link{
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
+}
+
+[class*='col-']{
+    float:left;
+    
+}
+
+
+[class*='col-']{
+    width:100%;
+    
+}
+.nav-link{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.nav-link a:hover{
+    background-color: aqua;
+}
+.navbar:after{
+    content: ' ';
+    display: table;
+    clear: both;
+}
+/* navbar design end here */
+/* profile design start here */
+.profile{
+    text-align: center;
+    padding: 140px 110px;
+    position: relative;
+}
+h1{
+    font-family: 'Satisfy', cursive;
+    text-align: center; 
+}
+.top-image{
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    transition:transform 2s;
+}
+.top-image:hover{
+    transform: rotate(360deg);
+}
+
+.top1{
+    position: absolute;
+    margin-top: 30px;
+    left: 100px;
+    transition:transform 2s;
+}
+.top1:hover{
+    transform: rotate(360deg);
+}
+p{
+    padding: 10px;
+    opacity: .6;
+}
+/* profile design ends here */
+/* about me design here */
+.about-container{
+    background-color: rgb(9, 87, 54);
+    padding: 70px;
+    color: white;
+}
+.dotted{
+    border: 6px dotted white;
+    border-bottom: none;
+    width: 120px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.about-me-image{
+text-align: center;
+}
+.about-me-image img{
+    width:200px;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 20px;
+    
+}
+[class*="col-"]{
+    float: left;
+}
+
+[class*="col-"]{
+    width: 100%;
+}
+.about-me::after{
+    content: ' ';
+    display: table;
+    clear: both;
+}
+.about-me{
+   margin-top:50px; 
+}
+h3{
+    margin: 10px;
+}
+hr{
+    color: white;
+}
+.text{
+    color: white;
+    font-size: 20px;
+    opacity: .9;
+}
+.link{
+    color: white;
+}
+button{
+    font-size: 18px;
+    padding: 10px;
+    background-color: rgb(218, 13, 81);
+}
+/* about me design end here */
+
+/* profession start from here */
+ .card-container{
+    background-color: rgb(233, 232, 240);
+    width: 100%;
+    height: auto;
+    margin: 5px;
+ }
+ .card1{
+   height: 1000px; 
+   float: left;
+   text-align: center;
+    padding: 10px;
+ }
+
+ .card{
+    height: 100%;
+    width:98%;
+    background-color: rgb(28, 34, 28);
+   border-radius: 5px;
+   transition: 1s;
+   color: white;
+   
+   
+ }
+ .card:hover{
+    height: 100%;
+    width:98%;
+    background-color: rgb(91, 117, 91);
+   border-radius: 5px;
+    box-shadow: 2px 4px 8px rgb(122, 15, 15);
+ }
+ .clear::after{
+    clear: both;
+    content: '';
+    display: table;
+ }
+ .card img{
+ margin-top: 15px;
+    
+    border: 2px solid white;
+    border-radius: 50%;
+ }
+ .card-img{
+ margin-top: 15px;
+    border: 2px solid white;
+    border-radius: 50%; 
+ }
+
+ li{
+    padding: 10px;
+ }
+ .com{
+    margin: 0 auto;
+    width: 100px;
+ }
+
+
+.demo{
+    padding: 10px;
+}
+
+ul li{
+    list-style-type: none;
+    margin: 45px;
+    position: relative;
+}
+
+
+ul li::before{
+   position: absolute;
+    content: '';
+    width:100%;
+    height:20px;
+    background-color: blue;
+    display:table;
+    border-radius: 1000px;
+    top: 50px;
+
+}
+
+ul li::after{
+    position: absolute;
+     content: '';
+     width:0;
+     height:20px;
+     background-color: rgb(135, 135, 163);
+     display:table;
+     border-radius: 1000px;
+     top: 50px;
+
+     animation-duration: 5s;
+     animation-delay: 1s;
+     animation-fill-mode: forwards;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+    
+     
+ }
+ ul li.html::after{
+    animation-name: html;
+ }
+
+@keyframes html {
+    to{
+        width:100%;
+        background: rgb(202, 102, 102);
+    }
+    
+}
+
+ul li.css::after{
+    animation-name: css;
+ }
+
+@keyframes css {
+    to{
+        width:90%;
+        background: rgb(97, 212, 52);
+    }
+    
+}
+
+ul li.boo::after{
+    animation-name: boo;
+ }
+
+@keyframes boo {
+    to{
+        width:85%;
+        background: rgb(12, 172, 172);
+    }
+    
+}
+ul li.sas::after{
+    animation-name: sas;
+ }
+
+@keyframes sas {
+    to{
+        width:80%;
+        background: rgb(44, 6, 6);
+    }
+    
+}
+
+ul li.js::after{
+    animation-name: js;
+ }
+
+@keyframes js {
+    to{
+        width:80%;
+        background: rgb(34, 82, 46);
+    }
+    
+}
+
+ul li.react::after{
+    animation-name: react;
+ }
+
+@keyframes react {
+    to{
+        width:80%;
+        background: rgb(169, 179, 31);
+    }
+    
+}
+
+ul li.php::after{
+    animation-name: php;
+ }
+
+@keyframes php {
+    to{
+        width:75%;
+        background: rgb(93, 22, 185);
+    }
+    
+}
+
+ul li.node::after{
+    animation-name: node;
+ }
+
+@keyframes node {
+    to{
+        width:70%;
+        background: rgb(7, 214, 59);
+    }
+    
+}
+
+/* professional ends here */
+/* contact start */
+.conrow{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 60px;
+    background-color: rgb(116, 19, 95);
+}
+input{
+    width: 80%;
+    font-size: 20px;
+    border: none;
+    height: 30px;
+    margin: 10px;
+    padding: 10px;
+    margin-top: 30px;
+}
+h2{
+    color: aliceblue;
+    margin: 10px;
+}
+.coicon button{
+    margin: 10px;
+    margin-top: 30px;
+    
+}
+textarea{
+    resize: none;
+}
+
+.btn{
+    background-color: white;
+    color: red;
+    font-size: 20px;
+}
+/* contact end */
